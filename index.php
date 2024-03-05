@@ -31,7 +31,7 @@ FROM pedidos
 JOIN pedidos_pagamentos ON pedidos.id = pedidos_pagamentos.id_pedido
 JOIN clientes ON pedidos.id_cliente = clientes.id
 WHERE pedidos.id_situacao = 1 
-AND pedidos_pagamentos.id_form_pagto = 3;
+AND pedidos_pagamentos.id_formapagto = 3;
 ";
 $pedidos = $pdo->query($sql);
 
